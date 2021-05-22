@@ -9,28 +9,28 @@ public class UserRegistrationTest {
     @Test
     public void givenFirstName_whenMin3Chars_FirstCharCaps_ReturnValid() throws Exception {
         UserRegistration u = new UserRegistration();
-        String result = u.validFirstName("Vaishnavi");
+        String result = u.validFirstName("Yash");
         Assertions.assertEquals("VALID", result);
     }
 
     @Test
     public void givenFirstName_whenMin3Chars_FirstCharNotCaps_ReturnInvalid() throws Exception {
         UserRegistration u = new UserRegistration();
-        String result = u.validFirstName("vaishnavi");
+        String result = u.validFirstName("Yash");
         Assertions.assertEquals("INVALID", result);
     }
 
     @Test
     public void givenLastName_whenMin3Chars_FirstCharCaps_ReturnValid() throws Exception {
         UserRegistration u = new UserRegistration();
-        String result = u.validLastName("Birle");
+        String result = u.validLastName("Pareek");
         Assertions.assertEquals("VALID", result);
     }
 
     @Test
     public void givenLastName_whenMin3Chars_FirstCharNotCaps_ReturnInvalid() throws Exception {
         UserRegistration u = new UserRegistration();
-        String result = u.validLastName("birle");
+        String result = u.validLastName("Pareek");
         Assertions.assertEquals("INVALID", result);
     }
 
